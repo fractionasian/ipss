@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>IPSS Calculator</title>
+    <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <div class="container mt-5">
+        <h2>IPSS Calculator</h2>
+        <form id="ipss-form">
+            <div class="form-group">
+                <h4>IPSS Questionnaire</h4>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Question</th>
+                            <th>0<br>(Not at all)</th>
+                            <th>1<br>(Less than 1 in 5)</th>
+                            <th>2<br>(Less than half the time)</th>
+                            <th>3<br>(About half the time)</th>
+                            <th>4<br>(More than half the time)</th>
+                            <th>5<br>(Almost always)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>Over the past month, how often have you had a sensation of not emptying your bladder completely after you finish urinating?</td>
+                            <td><input type="radio" name="incomplete_emptying" value="0"></td>
+                            <td><input type="radio" name="incomplete_emptying" value="1"></td>
+                            <td><input type="radio" name="incomplete_emptying" value="2"></td>
+                            <td><input type="radio" name="incomplete_emptying" value="3"></td>
+                            <td><input type="radio" name="incomplete_emptying" value="4"></td>
+                            <td><input type="radio" name="incomplete_emptying" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Over the past month, how often have you had to urinate again less than two hours after you finished urinating?</td>
+                            <td><input type="radio" name="frequency" value="0"></td>
+                            <td><input type="radio" name="frequency" value="1"></td>
+                            <td><input type="radio" name="frequency" value="2"></td>
+                            <td><input type="radio" name="frequency" value="3"></td>
+                            <td><input type="radio" name="frequency" value="4"></td>
+                            <td><input type="radio" name="frequency" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Over the past month, how often have you found you stopped and started again several times when you urinated?</td>
+                            <td><input type="radio" name="intermittency" value="0"></td>
+                            <td><input type="radio" name="intermittency" value="1"></td>
+                            <td><input type="radio" name="intermittency" value="2"></td>
+                            <td><input type="radio" name="intermittency" value="3"></td>
+                            <td><input type="radio" name="intermittency" value="4"></td>
+                            <td><input type="radio" name="intermittency" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Over the past month, how often have you found it difficult to postpone urination?</td>
+                            <td><input type="radio" name="urgency" value="0"></td>
+                            <td><input type="radio" name="urgency" value="1"></td>
+                            <td><input type="radio" name="urgency" value="2"></td>
+                            <td><input type="radio" name="urgency" value="3"></td>
+                            <td><input type="radio" name="urgency" value="4"></td>
+                            <td><input type="radio" name="urgency" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Over the past month, how often have you had a weak urinary stream?</td>
+                            <td><input type="radio" name="weak_stream" value="0"></td>
+                            <td><input type="radio" name="weak_stream" value="1"></td>
+                            <td><input type="radio" name="weak_stream" value="2"></td>
+                            <td><input type="radio" name="weak_stream" value="3"></td>
+                            <td><input type="radio" name="weak_stream" value="4"></td>
+                            <td><input type="radio" name="weak_stream" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Over the past month, how often have you had to push or strain to begin urination?</td>
+                            <td><input type="radio" name="straining" value="0"></td>
+                            <td><input type="radio" name="straining" value="1"></td>
+                            <td><input type="radio" name="straining" value="2"></td>
+                            <td><input type="radio" name="straining" value="3"></td>
+                            <td><input type="radio" name="straining" value="4"></td>
+                            <td><input type="radio" name="straining" value="5"></td>
+                        </tr>
+                        <tr>
+                            <td>Over the past month, how many times did you typically get up to urinate from the time you went to bed at night until the time you got up in the morning?</td>
+                            <td><input type="radio" name="nocturia" value="0"></td>
+                            <td><input type="radio" name="nocturia" value="1"></td>
+                            <td><input type="radio" name="nocturia" value="2"></td>
+                            <td><input type="radio" name="nocturia" value="3"></td>
+                            <td><input type="radio" name="nocturia" value="4"></td>
+                            <td><input type="radio" name="nocturia" value="5"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+
+            <div class="form-group">
+                <h4>Quality of Life</h4>
+                <table class="table table-bordered">
+                    <thead>
+                        <tr>
+                            <th>Quality of Life</th>
+                            <th>0<br>(Delighted)</th>
+                            <th>1<br>(Pleased)</th>
+                            <th>2<br>(Mostly satisfied)</th>
+                            <th>3<br>(Mixed)</th>
+                            <th>4<br>(Mostly dissatisfied)</th>
+                            <th>5<br>(Unhappy)</th>
+                            <th>6<br>(Terrible)</th>
+                        </tr>
+                    </thead>
+                    <tbody>
+                        <tr>
+                            <td>If you were to spend the rest of your life with your urinary condition just the way it is now, how would you feel about that?</td>
+                            <td><input type="radio" name="quality_of_life" value="0"></td>
+                            <td><input type="radio" name="quality_of_life" value="1"></td>
+                            <td><input type="radio" name="quality_of_life" value="2"></td>
+                            <td><input type="radio" name="quality_of_life" value="3"></td>
+                            <td><input type="radio" name="quality_of_life" value="4"></td>
+                            <td><input type="radio" name="quality_of_life" value="5"></td>
+                            <td><input type="radio" name="quality_of_life" value="6"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </form>
+
+        <div class="form-group mt-3">
+            <label for="outputText">Output:</label>
+            <textarea id="outputText" class="form-control" rows="5" readonly></textarea>
+            <button type="button" class="btn btn-secondary mt-2" onclick="copyOutput()">Copy</button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
